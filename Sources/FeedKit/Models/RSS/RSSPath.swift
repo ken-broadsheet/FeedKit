@@ -116,7 +116,11 @@ enum RSSPath: String {
     case rssChannelItemDublinCoreRelation                       = "/rss/channel/item/dc:relation"
     case rssChannelItemDublinCoreCoverage                       = "/rss/channel/item/dc:coverage"
     case rssChannelItemDublinCoreRights                         = "/rss/channel/item/dc:rights"
-    
+
+    // FeedBurner
+
+    case rssChannelItemFeedBurnerOrigLink                       = "/rss/channel/item/feedburner:origLink"
+
     // iTunes Podcasting Tags
     
     case rssChannelItunesAuthor                                 = "/rss/channel/itunes:author"

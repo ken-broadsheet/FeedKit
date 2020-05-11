@@ -113,6 +113,8 @@ extension RSSFeed {
         case .rssChannelItemDublinCoreRelation:                     self.items?.last?.dublinCore?.dcRelation                        = self.items?.last?.dublinCore?.dcRelation?.appending(string) ?? string
         case .rssChannelItemDublinCoreCoverage:                     self.items?.last?.dublinCore?.dcCoverage                        = self.items?.last?.dublinCore?.dcCoverage?.appending(string) ?? string
         case .rssChannelItemDublinCoreRights:                       self.items?.last?.dublinCore?.dcRights                          = self.items?.last?.dublinCore?.dcRights?.appending(string) ?? string
+        case .rssChannelItemFeedBurnerOrigLink:                     self.items?.last?.feedburnerOrigLink
+                                  = self.items?.last?.feedburnerOrigLink?.appending(string) ?? string
         case .rssChannelItunesAuthor:                               self.iTunes?.iTunesAuthor                                       = self.iTunes?.iTunesAuthor?.appending(string) ?? string
         case .rssChannelItunesBlock:                                self.iTunes?.iTunesBlock                                        = self.iTunes?.iTunesBlock?.appending(string) ?? string
         case .rssChannelItunesExplicit:                             self.iTunes?.iTunesExplicit                                     = self.iTunes?.iTunesExplicit?.appending(string) ?? string
